@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quick math</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+</head>
+
+<body>
+    <div class="page-content">
+        <div class="nav">
+            <div class="left">
+                <div class="item" id="hud-name"></div>
+            </div>
+            <div class="main">
+                <h1 class="header">Quick Math</h1>
+                <h2 class="sub-header">Let's do the quick game</h2>
+            </div>
+            <div class="right">
+                <div class="item" id="hud-people"></div>
+                <div class="item" id="hud-score"></div>
+            </div>
+
+        </div>
+
+
+        <div class="game-content">
+            <div class="question-answer display-none" id="question-answer">
+                <div id="progress-bar">
+                    <div class="progress-container">
+                        <div id="text-bar">5</div>
+                        <div id="inner-bar"></div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-number" id="question-number">
+                        Question # 1
+                    </div>
+                    <div class="question-img display-none" id="question-img">
+
+                    </div>
+                    <div class="question-text display-none" id="question-text">
+                        <!-- 1+1=? -->
+                    </div>
+                </div>
+                <div class="answer display" id="answer-list">
+                    <button class="choice btn" id="choice-0">
+                        choice1
+                    </button>
+                    <button class="choice btn" id="choice-1">
+                        choice2
+                    </button>
+                    <button class="choice btn" id="choice-2">
+                        choice3
+                    </button>
+                    <button class="choice btn" id="choice-3">
+                        choice4
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-container display-none" id="form-submit">
+                <div class="input-name-wraper">
+                    <input type="text" class="input-text form-item" id="input-name" placeholder="Enter your name...">
+                </div>
+                <button class="input-btn form-item btn" id="submit-btn">Play!</button>
+                <div class="validate-text" id="validate-text"></div>
+            </div>
+
+
+            <div class="general-text" id="general-text">
+                Connecting to server ...
+            </div>
+            <div class="rank-table-container display-none" id="rank-table-container">
+                <h1>Ranks</h1>
+                <div class="rank-table" id="rank-table">
+                    <table id="table" class="table">
+                        <!-- <tr class="table-header" ><th>#Rank</th><th>Name</th><th>Score</th></tr> -->
+                        <!-- <tr class="primary-blue-color" ><td>${index+1}</td><td>${item.NAME}</td><td>${item.score}</td></tr> -->
+                    </table>
+                </div>
+                <button class="input-btn btn" id="playagain-btn">Play again!</button>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
